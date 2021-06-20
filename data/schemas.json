@@ -1,0 +1,179 @@
+{
+    "alumni":{
+        "PhDAlumniList":[
+            {
+                "name": "",
+                "image": "",
+                "email": "",
+                "currentPos": "",
+                "mentor": "",
+                "area": ""
+            }
+        ],
+        "MScAlumniList":[
+            {
+                "batch": "" , 
+                "grpImage": "",
+                "students": [""]
+            }
+        ]
+    },
+    "announcements":{
+        "announcements": [""],
+        "events": [
+            {
+                "name": "",
+                "link": ""
+            }
+        ]
+    },
+    "btech_msc":{
+        "btech":[
+            {
+                "batch": "" , 
+                "grpImage": "",
+                "students": [""]
+            }
+        ],
+        "msc":[
+            {
+                "batch": "" , 
+                "grpImage": "",
+                "students": [""]
+            }
+        ]
+    },
+    "carousel":{
+        "About Us": [""],
+        "General UG": [""],
+        "PhD": [""],
+        "Outreach": [""]
+    },
+    "doctoral":{
+        "doctoral":[
+            {
+                "name": "",
+                "image": "",
+                "area" : "",
+                "mentor" : "",           
+                "email" : "",
+                "link": ""
+            }
+        ]
+    },
+    "faculty":{
+        "faculty":[
+            {
+                "name": "",
+                "designation": "", 
+                "image": "" ,
+                "areas": "", 
+                "email": "",
+                "roomNo": "",
+                "phone": "", 
+                "link": ""
+            }
+        ]
+    },
+    "fundedprojects":{
+        "fundedprojects":[
+            {
+                "title": "",
+                "prof": "",
+                "agency": "",
+                "duration": "",
+                "openings": ""
+            }
+        ]
+    },
+    "generalugcourses":{
+        "generalugcourses":[
+            {
+                "CourseCode": "",
+                "CourseName": "",
+                "Syllabus":""
+            }
+        ]
+    },
+    "phd_admissions":{
+        "components":[
+            {
+                "header":"",
+                "body":[""],
+                "links":[
+                    {
+                        "link":"",
+                        "linktext":""
+                    }
+                ]
+            }
+        ]
+    },
+    "postdoc":{
+        "PostDoctoral": [
+            {
+                "name": "",
+                "image": "",
+                "email": "",
+                "area": "",
+                "mentor": "",
+                "stay": "",
+                "link": ""
+            }
+        ],
+        "FormerPostDoctoral":[
+            {
+                "name": "",
+                "image": "",
+                "email": "",
+                "area": "",
+                "mentor": "",
+                "stay": "",
+                "link": ""
+            }
+        ]
+    },
+    "publications":{
+        "publications":[
+            {
+                "year":"",
+                "publications":[
+                    {
+                        "people": "",
+                        "name": "",
+                        "details": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "seminars":{
+        "seminars":[
+            {
+                "year":"",
+                "seminars":[
+                    {
+                        "Topic": "" ,
+                        "Abstract":  "",
+                        "Speaker": "",
+                        "DateVenue": ""
+                    }
+                ]
+            }
+        ]
+    },
+    "page_routes":{
+        "routes":[
+            {
+                "section": "",
+                "pages": [
+                    {
+                        "name": "",
+                        "url": "",
+                        "pageType": ""
+                    }
+                ]
+            }
+        ]
+    }
+}

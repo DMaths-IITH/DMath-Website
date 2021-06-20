@@ -1,0 +1,23 @@
+{
+    "PostDoctoral": [],
+    "FormerPostDoctoral": [
+        {
+            "name": "Dr. Priya Ranjan Muduli",
+            "image": "/images/people/postDoctoral/muduli.jpg",
+            "email": " priyaranjanmuduli@gmail.com",
+            "area": "Sparse Signal Processing, Convex Optimization and Machine Learning",
+            "mentor": "Prof. C.S. Sastry",
+            "stay": "Nov 2019 to - ",
+            "link": "https://sites.google.com/view/priyaranjanmuduli/home"
+        },
+        {
+            "name": "Dr. Praveen Kumar P U",
+            "image": "/images/people/postDoctoral/praveen.png",
+            "email": " praveen577302@gmail.com",
+            "area": " Image Processing, Inverse Problems",
+            "mentor": "Prof. C.S. Sastry",
+            "stay": "June 2014 to March 2017",
+            "link": "https://scholar.google.co.in/citations?user=JtfJ9Z4AAAAJ&hl=en"
+        }
+    ]
+}

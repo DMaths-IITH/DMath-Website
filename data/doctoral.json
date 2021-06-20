@@ -1,0 +1,180 @@
+{
+    "doctoral":[
+        {   
+            "name": "Alok Kumar Sahoo",
+            "image": "/images/people/doctoral/Alok.jpg",
+            "area" : "Partial Differential Equations",
+            "mentor" : "Dr Bhakti Bhusan Manna",           
+            "email" : "ma17resch11001@iith.ac.in",
+            "link": "http://sites.google.com/iith.ac.in/alok-kumar-sahoo"
+        },
+        {
+            "name": "Ankush",
+            "image": "/images/people/doctoral/Ankush.jpg",
+            "area" : "Fluid Dynamics",
+            "mentor" : "Dr P A Lakshmi Narayana",
+            "email" : "ma20resch01001@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Arindam Ghosh",
+            "image": "/images/people/doctoral/Arindam.jpg",
+            "area" : "Functional Analysis",
+            "mentor" : "Dr D Sukumar",
+            "email" : "ma18resch11002@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Arpan Singh",
+            "image": "/images/people/doctoral/Arpan.jpg",
+            "area" : "Design of Experiments",
+            "mentor" : "Dr. Satya Prakash Singh",
+            "email" : "ma20resch01002@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Chitra Venugopal",
+            "image": "/images/people/doctoral/MA19RESCH11002.jpg",
+            "area" : "Commutative Algebra",
+            "mentor" : "Dr. Neeraj Kumar",
+            "email" : "ma19resch11002@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Jain Sagar",
+            "image": "/images/people/doctoral/Jain_sagar.jpg",
+            "area" :  "Functional Analysis.",
+            "mentor" : "Dr. D Sukumar",
+            "email" : "ma20resch01003@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Kavit Nanavati",
+            "image": "/images/people/doctoral/MA20RESCH1004.png",
+            "area" :  "Fuzzy Logic Connectives.",
+            "mentor" : "Prof. Balasubramaniam Jayaram",
+            "email" : "ma20resch01004@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Marie Amalore Nambi P",
+            "image": "/images/people/doctoral/MA19RESCH11004.jpeg",
+            "area" : "Commutative Algebra",
+            "mentor" : "Dr. Neeraj Kumar",
+            "email": "ma19resch11004@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Megha Gupta",
+            "image": "/images/people/doctoral/megha.jpg",
+            "area" : "Fuzzy Measures and Integrals.",
+            "mentor" : "Prof. Balasubramaniam Jayaram",
+            "email" : "ma16m18p100001@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Munnu Sonkar",
+            "image": "/images/people/doctoral/Munnu.jpg",
+            "area" : "Inverse Problems and Sparse Representations",
+            "mentor" : "Prof. C. S. Sastry",
+            "email" : "ma17resch01001@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Najiya KZ",
+            "image": "/images/people/doctoral/Najiya.jpg",
+            "area" : "Wavelet Analysis ",
+            "mentor" : "Prof. C. S. Sastry",
+            "email" : "ma17resch11004@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Ranjan Bera",
+            "image": "/images/people/doctoral/Ranjan.jpg",
+            "area" : "Number Theory",
+            "mentor" : "Dr Pradipto Banarjee",
+            "email" : "ma15resch01002@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Satyabrat Sahoo",
+            "image": "/images/people/doctoral/satyabrat.jpg",
+            "area" : "Number Theory",
+            "mentor" : "Dr Narasimha Kumar",
+            "email" : "ma18resch11004@iith.ac.in",
+            "link": "https://sites.google.com/iith.ac.in/satyabrat-sahoo/home"
+        },
+        {
+            "name": "Shanola Smitha Sequeira",
+            "image": "/images/people/doctoral/smitha.jpg",
+            "area" : "Operator Theory",
+            "mentor" : "Dr G Ramesh",
+            "email" : "ma18resch11001@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Shantam Gulati",
+            "image": "/images/people/doctoral/MA19RESCH11005.jpg",
+            "area" : "Sparse optimization techniques, Electric Impedance Tomography (EIT)",
+            "mentor" : "Prof. C. S. Sastry",
+            "email" : "ma19resch11005@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Shubham Rameshsingh Bais",
+            "image": "/images/people/doctoral/shubham.jpg",
+            "area" : "Harmonic Analysis",
+            "mentor" : "Dr D Venku Naidu",
+            "email" : "ma18resch11003@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Soumitra Dapatri",
+            "image": "/images/people/doctoral/Soumitra.jpg",
+            "area" : "Functional Analysis.",
+            "mentor" : "Dr Tanmoy Paul",
+            "email" : "ma17resch11003@iith.ac.in",
+            "link": "https://sites.google.com/iith.ac.in/soumitradaptari/home"
+        },
+        {
+            "name": "Sudip Ranjan Bhuia",
+            "image": "/images/people/doctoral/Sudip.jpg",
+            "area" : "Operator theory",
+            "mentor" : "Dr. G Ramesh and Dr. D Venku Naidu",
+            "email" : "ma16resch11003@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        { 
+            "name": "Tarun Dalal",
+            "image": "/images/people/doctoral/Tarun.jpg",
+            "area" : "Number Theory ",            
+            "mentor" : "Dr Narasimha Kumar",
+            "email" : "ma17resch11005@iith.ac.in",
+            "link": "https://sites.google.com/iith.ac.in/tarundalal/home"
+        },
+        {
+            "name": "Teega Venkateswararao",
+            "image": "/images/people/doctoral/MA19RESCH11001.jpg",
+            "area" : "Reliability Theory",             
+            "mentor" : "Dr. Sameen Naqvi",
+            "email" : "ma19resch11001@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Teena Thomas",
+            "image": "/images/people/doctoral/ma19resch11003.jpg",
+            "area" : "Functional Analysis ",            
+            "mentor" : "Dr. Tanmoy Paul",
+            "email" : "ma19resch11003@iith.ac.in",
+            "link": "https://math.iith.ac.in/people/doctoral/"
+        },
+        {
+            "name": "Vikash Kumar Gupta",
+            "image": "/images/people/doctoral/Vikas.jpg",
+            "area" : "Fuzzy Logic Connectivities",
+            "mentor" : "Prof. Balasubramaniam Jayaram",
+            "email" : "ma17resch01002@iith.ac.in",
+            "link": "https://dilatable-charges.000webhostapp.com/Vikash_HOME.html"
+        }
+    ]
+}
