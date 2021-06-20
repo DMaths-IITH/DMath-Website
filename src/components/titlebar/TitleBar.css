@@ -1,0 +1,97 @@
+.titleBar{
+    height: 10vh;
+    min-height: 55px;
+    width: 100%;
+    background-color: rgb(250,250,250);
+    box-shadow: 0px 2px 2px rgb(216, 216, 216);
+    z-index: 3;
+    top: 0;
+    display: flex;
+    position: sticky;
+    position: -webkit-sticky;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+  
+.deptTitle{
+    padding-left: 2vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+  
+@media screen and (max-width: 800px){
+
+  .deptTitle{
+    width: 100%;
+  }
+
+  .menuIcon{
+    z-index: 3;
+    margin-right: 6px;
+    min-height: 100%;
+  }
+
+  .iithImage{
+    display: none;
+  }
+
+  .titleImageSmall{
+    object-fit: scale-down;
+    align-self: center;
+  }
+
+  .titleImageLarge{
+    display: none;
+  }
+}
+    
+@media screen and (min-width: 801px) and (max-width: 1500px){
+
+  .menuIcon{
+    display: none;
+  }
+
+  .titleImageSmall{
+    display: none;
+  }
+
+  .iithImage{
+    height: 100%;
+    margin: 4px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    color: darkblue;
+    flex: 0;
+    object-fit: scale-down;
+  }
+}
+
+@media screen and (min-width: 1501px){
+  .menuIcon{
+    display: none;
+  }
+
+  .titleImageSmall{
+    display: none;
+  }
+
+  .deptTitle{
+    height: 90%;
+    align-self: center;
+  }
+
+  .iithImage{
+    height: 80%;
+    margin-top: 6px;
+    margin-right: 10px;
+    align-self: center;
+  }
+}
+
+  
+  

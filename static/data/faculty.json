@@ -1,0 +1,164 @@
+{
+    "faculty":[
+        {
+            "name": "Dr.Amit Tripathi",
+            "designation":  "Assistant Professor", 
+            "image": "/images/people/faculty/AmitSirImg.jpg" ,
+            "areas": "Algebraic geometry and commutative algebra", 
+            "email": " amittr@math.iith.ac.in",
+            "roomNo": "C-442",
+            "phone": "(040) 2301 - 6611", 
+            "link": "https://sites.google.com/site/amittr"
+        },
+        {
+            "name": "Dr. Anantha Lakshmi Narayana P",
+            "designation":  "Associate Professor & Head of the Department",
+            "image": "/images/people/faculty/PAL.png",
+            "areas": "Convection in Porous Media", 
+            "email": " ananth@math.iith.ac.in", 
+            "roomNo": "C-502", 
+            "phone": "(040) 2301 - 6603", 
+            "link": "http://www.iith.ac.in/~ananth/"
+        },
+        {
+            "name": "Dr. Balasubramaniam Jayaram",
+            "designation":  "Professor ",
+            "image": "/images/people/faculty/BalaSirImg.jpg",
+            "areas": "Fuzzy Logic Connectives, Approximate Reasoning", 
+            "email": " jbala@math.iith.ac.in", 
+            "roomNo": "C-504", 
+            "phone": "(040) 2301 - 6601", 
+            "link": "https://iith.ac.in/~jbala/"
+        },
+        {
+            "name": "Dr. Bhakti Bhusan Manna",
+            "designation":  "Assistant Professor",
+            "image": "/images/people/faculty/BhusanSirImg.jpg",
+            "areas": "Partial Differential Equations, Variational Methods and Geometric Analysis", 
+            "email": "bbmanna@math.iith.ac.in", 
+            "roomNo": " C-537", 
+            "phone": "(040) 2301 - 6610", 
+            "link": "https://math.iith.ac.in/People/faculty.html#"
+        },
+        {
+            "name": "Dr. Dipankar Ghosh",
+            "designation":  "Assistant Professor",
+            "image": "/images/people/faculty/DGhosh.jpg",
+            "areas": "Commutative Algebra", 
+            "email": "dghosh@math.iith.ac.in", 
+            "roomNo": "C-313/D", 
+            "phone": "(040) 2301 - 6614", 
+            "link": "https://sites.google.com/view/dipankar-ghosh"
+        },
+        {
+            "name": "Dr. Mrinmoy Datta",
+            "designation":  "Assistant Professor",
+            "image": "/images/people/faculty/Mrinmoy.jpg",
+            "areas": "Algebraic Geometry and their applications to Error-correcting codes", 
+            "email": " mrinmoy.datta@math.iith.ac.in", 
+            "roomNo": "", 
+            "phone": "", 
+            "link": "https://math.iith.ac.in/People/faculty.html"
+        },
+        {
+            "name": "Dr. Narasimha Kumar",
+            "designation":  "Associate Professor",
+            "image": "/images/people/faculty/NarasimhaSirImg.jpg", 
+            "areas": "Arithmetic Geometry, Algebraic Number Theory", 
+            "email": " narasimha@math.iith.ac.in", 
+            "roomNo": "C-547", 
+            "phone": "(040) 2301 - 6608", 
+            "link": "https://sites.google.com/site/chnarasimhakumar/home"
+        },
+        {
+            "name": "Dr. Neeraj Kumar",
+            "designation":  "Assistant Professor",
+            "image": "/images/people/faculty/Neeraj.jpg", 
+            "areas": "Commutative Algebra", 
+            "email": " neeraj@math.iith.ac.in", 
+            "roomNo": "C-531", 
+            "phone": "(040) 2301 - 6613", 
+            "link": "https://iith.ac.in/~neeraj/"
+        },
+        {
+            "name": "Dr. Pradipto Banerjee",
+            "designation":  "Assistant Professor",
+            "image": "/images/people/faculty/PradiptoSirImg.jpg",
+            "areas": "Number Theory, including Elementary, Classical Algebraic and Computational Topics", 
+            "email": " pradipto@math.iith.ac.in", 
+            "roomNo": " B-219", 
+            "phone": "(040) 2301 - 6609", 
+            "link": "https://math.iith.ac.in/People/faculty.html#"
+        },
+        {
+            "name": "Dr. Ramesh G",
+            "designation":  "Associate Professor",
+            "image": "/images/people/faculty/RameshSirImg.jpg",
+            "areas": "Functional Analysis, Operator Algebras", 
+            "email": " rameshg@math.iith.ac.in", 
+            "roomNo": "C-515", 
+            "phone": "(040) 2301 - 6604", 
+            "link": "http://www.iith.ac.in/~rameshg/"
+        },
+        {
+            "name": "Dr. Sameen Naqvi",
+            "designation": "Assistant Professor",
+            "image": "/images/people/faculty/Sameen.jpg",
+            "areas": "Reliability Theory, Stochastic Orders, Applied Statistics, Risk Theory", 
+            "email": "  sameen@math.iith.ac.in", 
+            "roomNo": " C-312/A", 
+            "phone": "(040) 2301 - 6612", 
+            "link": "https://www.sameennaqvi.com/"
+        },
+        {
+            "name": "Dr. Satya Prakash Singh",
+            "designation":  "Assistant Professor",
+            "image": "/images/people/faculty/Satya.jpg",
+            "areas": "Optimal Design Theory, Order Restricted Experiments, Cluster Randomized Trials, Cross-over Designs", 
+            "email": "spsingh@math.iith.ac.in", 
+            "roomNo": "C-312/G", 
+            "phone": "(040) 2301 - 6615", 
+            "link": "http://www.iith.ac.in/~spsingh/"
+        },
+        {
+            "name": "Dr. Subrahmanya Sastry Challa",
+            "designation":  "Professor",
+            "image": "/images/people/faculty/ChallaSirImg.jpg", 
+            "areas": "Wavelets, Computed Tomography, Sparsity seeking optimization techniques", 
+            "email": " csastry@math.iith.ac.in", 
+            "roomNo": "C-503", 
+            "phone": "(040) 2301 - 6602", 
+            "link": "http://www.iith.ac.in/~csastry/index.html"
+        },
+        {
+            "name": "Dr. Sukumar D",
+            "designation":  "Associate Professor",
+            "image": "/images/people/faculty/SukuSirImg.jpg",
+            "areas": "Functional Analysis, Banach algebra, Numerical Linear algebra", 
+            "email": " suku@math.iith.ac.in", 
+            "roomNo": "A-506", 
+            "phone": "(040) 2301 - 6606", 
+            "link": "http://www.iith.ac.in/~suku/"
+        },
+        {
+            "name": "Dr. Tanmoy Paul",
+            "designation":  "Assistant Professor",
+            "image": "/images/people/faculty/TPaul.jpg",
+            "areas": "Functional Analysis, Banach space theory, Geometry of Banach spaces", 
+            "email": "tanmoy@math.iith.ac.in", 
+            "roomNo": "A-301", 
+            "phone": "(040) 2301 - 6605", 
+            "link": "https://iith.academia.edu/TanmoyPaul"
+        },
+        {
+            "name": "Dr. Venku Naidu .D",
+            "designation": "Associate Professor",
+            "image": "/images/people/faculty/Venku.jpg",
+            "areas": "Harmonic Analysis, Functional Analysis", 
+            "email": "venku@math.iith.ac.in", 
+            "roomNo": "C-544", 
+            "phone": "(040) 2301 - 6607", 
+            "link": "http://iith.ac.in/~venku/index.html"
+        }
+    ]
+}

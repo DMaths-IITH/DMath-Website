@@ -1,0 +1,196 @@
+.tableViewRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    width: 100%;
+    background-color: rgb(250,250,250);
+    padding: 4px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.tableViewIndexNo{
+    width: 7%;
+    border: 1px solid rgb(170, 170, 170);
+    margin: 0px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.tableViewContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(170, 170, 170);
+    margin: 0px;
+    padding: 4px;
+    padding-left: 12px;
+    padding-right: 6px;
+    justify-content: center;
+    box-sizing: border-box;
+    white-space: pre-line;
+    color: rgb(0, 0, 71);
+}
+
+.tableViewShowContent{
+    color: rgb(75, 75, 75);
+    white-space: pre-line;
+}
+
+.tableViewHideColumn{
+    display: none;
+}
+
+.tableViewLinksEdit{
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px){
+    .tableViewLastCol{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .tableViewLastColEdit{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .tableViewSpeaker{
+        width: 100%;
+        border: 1px solid rgb(170, 170, 170);
+        margin: 0px;
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        white-space: pre-line;
+        padding-left: 12px;
+        padding-right: 6px;
+        padding-top: 5px;
+        padding-bottom: 3px;
+    }
+    
+    .tableViewDate{
+        width: 35%;
+        border: 1px solid rgb(170, 170, 170);
+        margin: 0px;
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .tableViewSpeakerEdit{
+        width: 100%;
+        border: 1px solid rgb(170, 170, 170);
+        margin: 0px;
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        box-sizing: border-box;
+        white-space: pre-line;
+        padding-left: 12px;
+        padding-right: 6px;
+    }
+
+    .tableViewRest{
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 801px){
+    .tableViewLastCol{
+        display: flex;
+        flex-direction: row;
+        width: 65%;
+    }
+
+    .tableViewLastColEdit{
+        display: flex;
+        flex-direction: column;
+        width: 65%;
+    }
+
+    .tableViewSpeaker{
+        width: 100%;
+        border: 1px solid rgb(170, 170, 170);
+        margin: 0px;
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        box-sizing: border-box;
+        white-space: pre-line;
+        padding-left: 12px;
+        padding-right: 6px;
+    }
+    
+    .tableViewSpeakerEdit{
+        width: 100%;
+        height: 50%;
+        border: 1px solid rgb(170, 170, 170);
+        margin: 0px;
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        box-sizing: border-box;
+        white-space: pre-line;
+        padding-left: 12px;
+        padding-right: 6px;
+    }
+    .tableViewDate{
+        width: 35%;
+        border: 1px solid rgb(170, 170, 170);
+        margin: 0px;
+        padding: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+    
+    .tableViewRest{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+.tableViewContentTitle{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,13 @@
+.marqueeBox{
+  padding: 10px;
+  background-color: rgb(250,250,250);
+  border: 1px solid rgb(170,170,170);
+  margin: 5px;
+}
+
+.marqueeText{
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}

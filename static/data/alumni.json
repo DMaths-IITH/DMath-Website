@@ -1,0 +1,197 @@
+{
+    "PhDAlumniList":[
+        {
+            "name": "Dr. Nageswara Rao Vemuri",
+            "image": "/images/people/alumni/Nag.jpg",
+            "email": "nrvemuriz@uohyd.ac.in",
+            "currentPos": "Asst Prof; Univ of Hyderabad",
+            "mentor": "Balasubramaniam Jayaram",
+            "area": "Fuzzy Logic Connectives"
+        },
+        {
+            "name": "Dr. Sayantan Mandal",
+            "image" : "/images/people/alumni/Sayantan.jpg",
+            "email": "saayaantaan17@gmail.com",
+            "currentPos": "Asst Prof; SRM University; Amaravati ",
+            "mentor": "Balasubramaniam Jayaram",
+            "area": "Approximate Reasoning"
+        },
+        {
+            "name": "Dr. R. Ramnaidu",
+            "image": "/images/people/alumni/Ramu.jpg",
+            "email": "MA11P003@iith.ac.in",
+            "currentPos": "Asst Prof. IIPE; Visaskhapatnam",
+            "mentor": "C S Sastry",
+            "area": "Sparse Representation Theory"
+        },
+        {
+            "name": "Dr. Pradip Sasmal",
+            "image": "/images/people/alumni/Pradip.jpg",
+            "email": "MA12P1005@iith.ac.in",
+            "currentPos": "Post Doc Fellow; IISc Bangalore",
+            "mentor": "C S Sastry; (Co-Advisor: Dr. Phanindra)",
+            "area": "Frames and Sparse representations"
+        },
+        {
+            "name": "Dr. Prasad Theeda",
+            "image": "/images/people/alumni/Prasad.jpg",
+            "email": "ma13p1004@iith.ac.in ",
+            "currentPos": "Asst. Prof; VIT Vellore",
+            "mentor": "C S Sastry; (Co-Advisor: Dr. Phanindra)",
+            "area": "Computed Tomography"
+        },
+        {
+            "name": "Dr. Santhosh Kumar Pamula",
+            "image": "/images/people/faculty/generic.png",
+            "email": " MA12P1004@iith.ac.in",
+            "currentPos": "Visiting Scientist; ISI Bangalore.",
+            "mentor": "G. Ramesh",
+            "area": "Operator theory"
+        },
+        {
+            "name": "Dr. Jadav Ganesh",
+            "image": "/images/people/alumni/Ganesh.jpg",
+            "email": " MA12P1003@iith.ac.in",
+            "currentPos": "Asst Prof; SRM University; Amaravati ",
+            "mentor": "G. Ramesh & D. Sukumar",
+            "area": "Operator Theory"
+        },
+        {
+            "name": "Dr. Neeru Bala",
+            "image": "/images/people/alumni/Neeru.jpg",
+            "email": " ma16resch01001@iith.ac.in",
+            "currentPos": "Post Doctoral fellow; IITH",
+            "mentor": "G. Ramesh",
+            "area": "Operator Theory"
+        },
+        {
+            "name": "Dr. Anjanna Matta",
+            "image": "/images/people/alumni/Anjanna.jpg",
+            "email": "anjireddyiitm@gmail.com",
+            "currentPos": "Assistant Professor; ICFAI Hyderabad",
+            "mentor": "Dr. P A L Narayana",
+            "area": "Hydrodynamic Stability"
+        },
+        {
+            "name": "Dr. N Deepika",
+            "image": "/images/people/alumni/Deepika.jpg",
+            "email": "ndeepika@nitw.ac.in",
+            "currentPos": "Assistant Professor; NIT Warangal",
+            "mentor": "Dr. P A L Narayana",
+            "area": "Hydrodynamic Stability"
+        },
+        {
+            "name": "Dr. Gautam Kumar",
+            "image": "/images/people/alumni/Gautam.jpg",
+            "email": "ma16resch01002@iith.ac.in",
+            "currentPos": "Postdoctoral Fellow; IIT Hyderabad",
+            "mentor": "Dr. P A L Narayana",
+            "area": "Nonlinear Stability of Flows"
+        },
+        {
+            "name": "Dr. S Veeramani",
+            "image": "/images/people/faculty/generic.png",
+            "email": " ma13p1005@iith.ac.in",
+            "currentPos": "",
+            "mentor": "Dr D Sukumar",
+            "area": "Functional Analysis"
+        },
+        {
+            "name": "Dr. Siva Rama Krishnan C",
+            "image": "/images/people/alumni/SRK.jpg",
+            "email": " ma13p1001@iith.ac.in",
+            "currentPos": "",
+            "mentor": "Dr D Sukumar and Dr Venku Naidu",
+            "area": "Functional Anaysis."
+        },
+        {
+            "name": "Dr. Surjeet Kaushik",
+            "image": "/images/people/alumni/Surjeet.jpg",
+            "email": " MA15resch01001@iith.ac.in",
+            "currentPos": "",
+            "mentor": "Dr Narasimha Kumar",
+            "area": "Number Theory."
+        },
+        {
+            "name": "Dr. Geethika Sebastian ",
+            "image": "/images/people/alumni/Geethika.jpg",
+            "email": "ma13p1002@iith.ac.in",
+            "currentPos": "",
+            "mentor": "Dr D Sukumar",
+            "area": "Functional Analysis"
+        },
+        {
+            "name": "Dr. Partha Satathi Patra",
+            "image": "/images/people/alumni/Partha.jpg",
+            "email": "ma13p1003@iith.ac.in",
+            "currentPos": "",
+            "mentor": "Dr Venku Naidu",
+            "area": "Harmonic Analysis"
+        }
+    ],    
+    "MScAlumniList":[
+        {
+            "batch": "M.Sc 2018" , 
+            "grpImage": "/images/people/btech_msc/msc18.jpg",
+            "students": [
+                 "Akshaya RaviChandran", 
+                 "Banothu Sharath Kumar", 
+                 "Bishal Bhunia", 
+                 "Kshama Singhal",
+                 "Megha Megha",
+                 "Meghender Pal",
+                 "Rohan Singh",
+                 "Sachin Bijarniya",
+                 "Shivcharan Saini",
+                 "Shradha Singh",
+                 "Titash Kumar Mahajan",
+                 "Utkarsh Mangal",
+                 "Vasav Ayush",
+                 "Avneet Kaur"
+            ]
+        },
+        {
+            "batch": "M.Sc 2017",
+            "grpImage": "/images/people/btech_msc/msc17.jpg",
+            "students": [
+                 "Arkabrata Das",
+                 "Arnab Kayal",
+                 "Arpan Singh",
+                 "Diksha Sharma",
+                 "D Anish",
+                 "Jai Kishan",
+                 "Kamal Harwani",
+                 "Mansi Bajaj",
+                 "Mohd Shahvez Alam",
+                 "Shantam Gulati",
+                 "Sourav Das",
+                 "Shubajit Roy",
+                 "Tanmay Kumar Karmakar",
+                 "Teena Thomas",
+                 "Tsering Lanzes"
+            ]
+        },
+        {
+            "batch": "M.Sc 2016",
+            "grpImage": "/images/people/alumni/msc16.jpg",
+            "students": [
+                 "Abhiram Banra",
+                 "Adiyta Robin Singh",
+                 "Haripada Roy",
+                 "Manisha Joshi",
+                 "Megha Gupta",
+                 "Monika",
+                 "Mostafizar Khandakar",
+                 "Priyanka",
+                 "Puja Pandey",
+                 "Robin Bharadwaj",
+                 "Saloni Sinha",
+                 "Saransh Bali",
+                 "Satyabrata Majee",
+                 "Shivam Raj",
+                 "Shubam Mishra",
+                 "Subinoy H"
+            ]
+        }
+    ]
+}

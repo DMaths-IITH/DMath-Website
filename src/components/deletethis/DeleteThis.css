@@ -1,0 +1,27 @@
+.deleteThis{
+    position: relative;
+    padding: 10px;
+    align-items: center;
+}
+
+.deleteThisButton{
+    display: none;
+}
+
+.deleteThisBox{
+    margin: 2px;
+}
+
+.deleteThis:hover .deleteThisBox{
+    margin: 0px;
+    border: 2px solid grey;
+}
+
+.deleteThis:hover .deleteThisButton{
+    display: inline;
+    top: 0px;
+    left: 40%;
+    z-index: 5;
+    position: absolute;
+}
+

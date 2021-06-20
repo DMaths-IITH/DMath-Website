@@ -1,0 +1,35 @@
+.adminWelcomeBox{
+    width: 90%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250,250,250);
+    height: 60vh;
+    margin-top: 10vh;
+    text-align: center;
+    box-shadow: 1px 1px 5px 0.5px rgb(184, 184, 184);
+}
+
+.adminPage{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.adminTitle{
+    color: darkblue;
+    border-bottom: 2px solid darkblue;
+}
+
+.adminNewPageRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}

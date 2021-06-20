@@ -1,0 +1,20 @@
+{
+    "About Us": [
+        "/images/homePage/Dmathfam.jpg",
+        "/images/homePage/HomepageEvent.jpg",
+        "/images/homePage/DmathGrp2.jpg",
+        "/images/homePage/sunrise.jpg"
+    ],
+    "General UG": [
+        "/images/academics/generalUG/GeneralUG.jpg"
+    ],
+    "PhD": [
+        "/images/academics/phd/phd_main.png",
+        "/images/academics/phd/phd_submain.png"
+    ],
+    "Outreach": [
+        "/images/news/outReach/event1.png",
+        "/images/news/outReach/event2.png",
+        "/images/news/outReach/event3.png"
+    ]
+}

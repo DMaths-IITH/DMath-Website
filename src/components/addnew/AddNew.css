@@ -1,0 +1,36 @@
+.addNewElement{
+    height: 24px;
+    background-color: rgb(250,250,250);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.addNewElement:hover .addNewOptions{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.addNewElement:hover .addNewLine{
+    height: 0px;
+    width: 45%;
+    border-top: 2px solid gray;
+} 
+
+.addNewLine{
+    width: 100%;
+    height: 0px;
+    border-top: 2px dashed rgb(200,200,200);
+}
+
+.addNewOptions{
+    display: none;
+}
+
+

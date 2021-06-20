@@ -1,0 +1,136 @@
+.profileViewEdit{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border: 1px solid rgb(170, 170, 170);
+}
+
+.profileViewExtrasList{
+    width: 80%;
+}
+
+.profileViewExtrasRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.profileViewExtrasCloseEdit{
+    color: brown;
+    font-size: large;
+    text-align: center;
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 19px;
+    width: 18px;
+    margin: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: 1px solid rgb(170, 170, 170);
+}
+
+.profileViewItemLabelEdit{
+    margin-right: 5px;
+    font-size: large;
+}
+
+.profileViewInputEdit{
+    width: 80%;
+    margin-right: 20px;
+}
+
+.profileViewItemEdit{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px;
+}
+
+@media screen and (min-width: 361px){
+    .profileViewImage{
+        width: 140px;
+        margin-left: 0.7vw;
+    }    
+
+    .profileView{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: left;
+        background-color: rgb(250,250,250);
+        padding: 3px;
+        margin-top: 2px;
+        margin-bottom: 2vh;
+        box-sizing: border-box;
+    }    
+    .profileViewImageWrap{
+        margin-right: 10px;
+    } 
+}
+
+@media screen and (max-width: 360px){
+    .profileViewImage{
+        width: 180px;
+        margin-left: 2vw;
+        margin-top: 1vh;
+    }
+    
+    .profileView{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        background-color: rgb(250,250,250);
+        padding: 3px;
+        box-sizing: border-box;
+        margin-bottom: 2vh;
+    }   
+    .profileViewImageWrap{
+        align-self: center;
+    } 
+}
+
+.profileViewName{
+    text-align: left;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    font-size: 1.2em;
+    color: darkblue;
+}
+
+.profileViewDesignation{
+    text-align: left;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 1em;
+    font-style: italic;
+}
+
+.profileViewArea{
+    text-align: left;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    font-size: 1em;
+}
+
+.profileViewExtras{
+    text-align: left;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 0.9em;
+    color: rgb(50,50,50);
+}

@@ -1,0 +1,179 @@
+{
+    "routes":[
+        {
+            "section": "Academics",
+            "pages": [
+                {
+                    "name": "B.Tech MnC", 
+                    "url": "/academics/btech/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "General UG",
+                    "url": "/academics/generalug/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "M.Sc",
+                    "url": "/academics/msc/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "Ph.D",
+                    "url": "/academics/phd/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "Minors and Double Majors",
+                    "url": "/academics/minors/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "Curriculum",
+                    "url": "/academics/curriculum/", 
+                    "pageType": "component"
+                }
+            ]
+        },
+        {
+            "section": "Research",
+            "pages": [
+                { 
+                    "name": "Areas",
+                    "url": "/research/areas/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "Publications",
+                    "url": "/research/publications/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "Funded Projects",
+                    "url": "/research/fundedprojects/", 
+                    "pageType": "component"
+                }
+            ]
+        },
+        {
+            "section": "People",
+            "pages": [
+                {
+                    "name": "Faculty",
+                    "url": "/people/faculty/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "Staff",
+                    "url": "/people/staff/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "B.Tech & M.Sc",
+                    "url": "/people/btech_msc/", 
+                    "pageType": "component"
+                }, 
+                { 
+                    "name": "Doctoral Students",
+                    "url": "/people/doctoral/", 
+                    "pageType": "component"
+                },
+                { 
+                    "name": "Post-doctoral Fellows",
+                    "url": "/people/postdoctoral/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "Alumni",
+                    "url": "/people/alumni/", 
+                    "pageType": "component"
+                }
+            ]
+        },
+        {
+            "section": "News & Events",
+            "pages": [
+                {
+                    "name": "Seminars",
+                    "url": "/news/seminars/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "Student Seminars",
+                    "url": "/news/studentseminars/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "Events",
+                    "url": "/news/events/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "Outreach Events",
+                    "url": "/news/outreach/", 
+                    "pageType": "component"
+                }
+            ]
+        },
+        {
+            "section": "Achievements",
+            "pages": [
+                {
+                    "name": "Internships and Placements",
+                    "url": "/achievements/placements/",
+                    "pageType": "component"
+                }
+            ]
+        },
+        {
+            "section": "Admissions",
+            "pages": [
+                {
+                    "name":"Ph.D Admissions",
+                    "url": "/admissions/phd/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "Summer Internships",
+                    "url": "/admissions/summerintern/", 
+                    "pageType": "component"
+                }
+            ]
+        },
+        {
+            "section": "Recruitments",
+            "pages": [
+                {
+                    "name": "Faculty Recruitments",
+                    "url": "/recruitments/faculty/", 
+                    "pageType": "component"
+                },
+                {
+                    "name": "Project Openings",
+                    "url": "/recruitments/project_openings/", 
+                    "pageType": "component"
+                }
+            ]
+        },
+        {
+            "section": "TimeTables",
+            "pages":  [
+                {
+                    "name": "B.Tech MnC Timetable",
+                    "url": "https://docs.google.com/document/d/1ClL6JsFBi7Ge68j7-dTZ2_TR-o96969k99COoDhAhGE/edit", 
+                    "pageType": "static"
+                },
+                {
+                    "name": "M.Sc Timetable",
+                    "url": "https://docs.google.com/document/d/1LqA-vM_koOTO43kmtdLbiKXwgxWngK4qK0XXFF6pRZI/edit?usp=sharing", 
+                    "pageType": "static"
+                },
+                {
+                    "name": "Department timetable",
+                    "url": "https://docs.google.com/document/d/1i4FXIOrxUvzFRNdTbHIG24hBo2hmJFS3yEG7esaSMwY/edit?usp=sharing", 
+                    "pageType": "static"
+                }
+            ]
+        }
+    ]
+}

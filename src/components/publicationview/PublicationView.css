@@ -1,0 +1,34 @@
+.publicationsColumn{
+    background-color: rgb(250,250,250);
+    padding-right: 3vw;
+    padding-left: 3vw;
+}
+
+.publicationPageLine{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.publicationsEntryTitleEdit{
+    font-size: large;
+    margin-right: 5px;
+    width: 70px;
+}
+
+.publicationsEntryEdit{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    margin: 5px;
+}
+
+.publicationColumnEdit{
+    border: 1px solid rgb(170, 170, 170);
+    padding: 10px;
+    margin: 4px;
+    background-color: rgb(250,250,250);
+}
