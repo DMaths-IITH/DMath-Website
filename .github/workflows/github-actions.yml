@@ -18,8 +18,8 @@ jobs:
           node-version: '16'
       
       - name: Install and Build
-      - run: npm ci
-      - run: gatsby build
+        run: npm ci
+        run: gatsby build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
