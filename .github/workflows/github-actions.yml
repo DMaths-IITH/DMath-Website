@@ -29,8 +29,8 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
-          ACCESS_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          token: ${{ secrets.DEPLOY_TOKEN }}
           branch: gh-pages 
           folder: public
-          GIT_CONFIG_NAME: AnuragReddy2000
-          GIT_CONFIG_EMAIL: anuragreddy1000@gmail.com
+          git-config-name: AnuragReddy2000
+          git-config-email: anuragreddy1000@gmail.com
