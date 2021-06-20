@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/DMath-Website",
   siteMetadata: {
     title: "Department of Mathematics",
   },
