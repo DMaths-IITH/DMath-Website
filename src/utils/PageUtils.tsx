@@ -9,7 +9,7 @@ import ImageView from "../components/imageview/ImageView";
 import { BatchViewModel, CarouselModel, GridViewModel, ImageViewModel, InfoViewModel, ProfileViewModel, PublicationModel, TableViewModel, TableModel, MarqueeModel} from "../models/Model"
 import React from 'react';
 import Table from "../components/table/Table";
-import Marquee from "../components/marquee/marquee";
+import Marquee from "../components/marquee/Marquee";
 
 let getNewModel = (type: string) => {
     switch(type){
