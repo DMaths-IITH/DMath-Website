@@ -2,7 +2,7 @@ import React from 'react';
 import GoogleButton from 'react-google-button'
 import { FirebaseUtils } from '../../utils/FirebaseUtils';
 import './Admin.css';
-import ReactCircularLoader from 'react-circular-loader';
+import ReactCircularLoader from '../../components/loader/ReactCircularLoader';
 
 
 interface AdminState{
@@ -66,8 +66,7 @@ class Admin extends React.Component<AdminProps, AdminState>{
         return(
             <div className="adminWelcomeBox">
                 <h2 className="adminTitle">DMath Admin</h2>
-                <p>{"Welcome to the admin page, " + user.name + " (" + user.email + ")"}</p>
-                <ReactCircularLoader primaryColor="white" secondaryColor="rgb(170,170,170" diameter="18px" primaryWidth="3px" secondaryWidth="5px"/>
+                <ReactCircularLoader primaryColor="white" secondaryColor="rgb(170,170,170" diameter="180px" primaryWidth="3px" secondaryWidth="5px"/>
                 <p>Verifying your access level...</p>
             </div>
         )

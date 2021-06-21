@@ -20,7 +20,7 @@ class ImageView extends React.Component<ImageViewProps>{
         const data = this.props.page_data["data"][this.props.component_id] as ImageViewModel;
         return(
             <div className="imageViewBox">
-                <img src={data.image} width='90%'/>
+                <img alt={data.image} src={data.image} width='90%'/>
                 {data.caption !== "" ? <div className="imageViewCaption">{data.caption}</div> : null}
             </div>
         );

@@ -106,7 +106,7 @@ class Carousel extends React.Component<CarouselProps,CarouselState>{
                     <div className='carousel'>
                         {imagesNum > 1 ? <BsChevronCompactLeft size={32} color='darkgrey' onClick={this.prevPic} className='carouselButtons'/> : null}
                         <div className='carouselImage'>
-                            <img src={data.images[this.state.currentPic]} width='100%'/>
+                            <img alt={data.images[this.state.currentPic]} src={data.images[this.state.currentPic]} width='100%'/>
                         </div>
                         {imagesNum > 1 ? <BsChevronCompactRight size={32} color='darkgrey' onClick={this.nextPic} className='carouselButtons'/> : null}
                     </div>

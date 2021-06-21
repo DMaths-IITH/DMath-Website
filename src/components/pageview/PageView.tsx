@@ -4,6 +4,7 @@ import AddNew from '../addnew/AddNew';
 import {getComponent, getNewId, getNewModel} from '../../utils/PageUtils';
 import DeleteThis from '../deletethis/DeleteThis';
 import AdminBar from '../adminbar/AdminBar';
+import { Helmet } from 'react-helmet';
 
 interface PageViewProps{
     pageContext: {
@@ -81,6 +82,9 @@ class PageView extends React.Component<PageViewProps, PageViewState>{
         }
         return(
             <PageContext.Provider value={context_object}>
+                <Helmet>
+                    <title>Department of Mathematics</title>
+                </Helmet>
                 {FirebaseUtils.isAdminLoggedIn()? <AdminBar edit_state={this.state.edit_mode} edit_toggle={()=>{this.setState({edit_mode: !this.state.edit_mode})}} onSubmit={this.saveChanges}/> : null}
                 <div style={{width:"100%", flexDirection:"column", justifyContent:"flex-start", alignItems:"center"}}>
                     {(this.state.page_data["components"] as {"component_id": string, "type":string}[]).map((each, index) => <div>

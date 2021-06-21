@@ -1,17 +1,28 @@
 module.exports = {
-  pathPrefix: "/DMath-Website",
   siteMetadata: {
     title: "Department of Mathematics",
   },
+  pathPrefix: "/DMath-Website",
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
+        name: "Department of Mathematics",
+        short_name: "Dmaths",
+        start_url: "/",
+        background_color: "#fafafa",
+        theme_color: "#fafafa",
+        display: "standalone",
         icon: "src/images/icon.png",
+        icon_options: {
+          purpose: `any maskable`,
+        },
       },
     },
+    "gatsby-plugin-no-sourcemaps",
+    "gatsby-plugin-offline",
     {
       resolve: `gatsby-plugin-typescript`,
       options: {

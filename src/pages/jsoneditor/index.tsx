@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactCircularLoader from '../../components/loader/ReactCircularLoader';
 import { FirebaseUtils } from '../../utils/FirebaseUtils';
 import './JsonEditor.css';
 
@@ -84,7 +85,7 @@ class JsonEditor extends React.Component<JsonEditorProps, JsonEditorState>{
                 {
                     (this.state.selectedPage !== "Not Selected") ? <div className="jsonEditorContent">
                         {
-                            (this.state.page_data === {}) ? <p>Loading...</p> : 
+                            (this.state.page_data === {}) ? <ReactCircularLoader primaryColor="white" secondaryColor="rgb(170,170,170" diameter="180px" primaryWidth="3px" secondaryWidth="5px"/> : 
                             this.getEditor()
                         }
                     </div>: null

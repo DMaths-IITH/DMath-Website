@@ -33,7 +33,7 @@ class BatchView extends React.Component<BatchViewProps>{
         const data = this.props.page_data["data"][this.props.component_id] as BatchViewModel;
         return(
             <div className='studentsBatch'>
-                {data.GrpImage==="" ? null:<img src={data.GrpImage}></img>}
+                {data.GrpImage==="" ? null:<img alt={data.GrpImage} src={data.GrpImage}></img>}
                 <div className='batchTitle'>
                     <p style={{margin: '5px', marginLeft: '20px', padding: '0px', color: 'darkblue', fontSize: 'larger'}}>{data.BatchName + ' Batch:'}</p>
                 </div>

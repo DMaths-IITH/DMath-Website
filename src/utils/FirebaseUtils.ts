@@ -100,16 +100,22 @@ export class FirebaseUtils {
         return false;
     }
 
-    static login = (callback:()=>void) => {
+    static login = async (callback:()=>void) => {
         const app = FirebaseUtils.getFirebaseApp()
         let provider = new firebase.auth.GoogleAuthProvider();
         if(typeof window !== "undefined"){
-            app?.auth().signInWithPopup(provider).then(function(result) {
-                callback();
-                alert("Welcome, " + result.user?.displayName)
+            await app?.auth().signInWithRedirect(provider);
+            app?.auth().getRedirectResult().then(function(result) {
+                if(result.credential){
+                    callback();
+                    alert("Welcome, " + result.user?.displayName)
+                }
+                else{
+                    alert("Oops... login failed. Please try again")
+                }
             }).catch(function(error) {
                 alert("Oops... login failed. Please try again")
-            });
+            })
         }
     }
 
