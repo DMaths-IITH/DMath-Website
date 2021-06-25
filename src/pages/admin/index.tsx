@@ -3,6 +3,7 @@ import GoogleButton from 'react-google-button'
 import { FirebaseUtils } from '../../utils/FirebaseUtils';
 import './Admin.css';
 import ReactCircularLoader from '../../components/loader/ReactCircularLoader';
+import { Link } from 'gatsby';
 
 
 interface AdminState{
@@ -94,7 +95,7 @@ class Admin extends React.Component<AdminProps, AdminState>{
                 <h2 className="adminTitle">DMath Admin</h2>
                 <p>{"Welcome to the admin page, " + user.name + " (" + user.email + ")"}</p>
                 <div>
-                    <a href="/jsoneditor"><button>Go to Json Editor</button></a>
+                    <Link to="/jsoneditor"><button>Go to Json Editor</button></Link>
                     <button style={{marginLeft:"10px"}} onClick={()=>this.setState({addNewPage: !this.state.addNewPage})}>Add a new page</button>
                 </div>
                 {this.state.addNewPage ? <div style={{marginTop: "15px", border:"2px solid rgb(170,170,170)", padding:"10px"}}>

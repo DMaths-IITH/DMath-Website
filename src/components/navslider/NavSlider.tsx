@@ -55,7 +55,7 @@ class NavSlider extends React.Component<NavSliderProps, NavSliderState>{
                     <NavTab name='Home' onClickEvent={this.home} currentTab={this.props.currentTab} urlLink='/' icon={AiOutlineHome}/>
                     {this.state.isloading ? <div style={{height:"80vh"}}/>:pages.routes.map(tab => <DropDownTab name={tab.section} contentTabs={tab.pages} currentDropdown={this.state.currentDropDown} currentTab={this.props.currentTab} onClickEvent={this.props.changeTab} dropDownUpdate={this.changeDropDownTab} icon={getIcon(tab.section)}/>)} 
                     <div className='contactUs'>
-                        <p style={{}}> <a rel="noreferrer" href='https://www.iith.ac.in/' style={{textDecoration: 'none', color: 'inherit', marginBottom: '3px', marginTop: '0px'}} target='_blank'>IITH Home</a></p>
+                        <p style={{}}> <Link rel="noreferrer" to='https://www.iith.ac.in/' style={{textDecoration: 'none', color: 'inherit', marginBottom: '3px', marginTop: '0px'}} target='_blank'>IITH Home</Link></p>
                     </div>   
                 </div>
             </div>

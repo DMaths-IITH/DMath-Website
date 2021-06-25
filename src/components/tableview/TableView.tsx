@@ -3,6 +3,7 @@ import './TableView.css'
 import {RiArrowDropDownLine} from 'react-icons/ri';
 import {RiArrowDropUpLine} from 'react-icons/ri';
 import { TableViewModel } from '../../models/Model';
+import { Link } from 'gatsby';
 
 interface TableViewState{
     expand: Boolean;
@@ -85,7 +86,7 @@ class TableView extends React.Component<TableViewProps,TableViewState>{
                             <p style={{width:'95%'}}>{this.state.data.title}</p>
                             {this.state.data.content || (this.state.data.links.linktext) ? (this.state.expand ? <RiArrowDropUpLine size={24} onClick={this.toggleContentView}/> : <RiArrowDropDownLine size={24} onClick={this.toggleContentView}/>):null}
                         </div>
-                        {(this.state.expand && (this.state.data.content || this.state.data.links.link)) ? <div className='tableViewShowContent'> <p >{this.state.data.content}</p> <p><a href={this.state.data.links.link} target='_blank'>{this.state.data.links.linktext}</a></p> </div> : null}
+                        {(this.state.expand && (this.state.data.content || this.state.data.links.link)) ? <div className='tableViewShowContent'> <p >{this.state.data.content}</p> <p><Link to={this.state.data.links.link} target='_blank'>{this.state.data.links.linktext}</Link></p> </div> : null}
                     </div>
                     {this.state.data.dateVenue || this.state.data.speaker ? <div className='tableViewLastCol'>
                         {this.state.data.speaker !== "" ? <div className='tableViewSpeaker'> <p>{this.state.data.speaker}</p> </div> : null}

@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import React from 'react';
 import { ProfileViewModel } from '../../models/Model';
 import './ProfileView.css';
@@ -46,8 +47,8 @@ class ProfileView extends React.Component<ProfileViewProps>{
                     <p className='profileViewDesignation'>{data.Designation}</p>
                     {(data.Area !== "") ? <p className='profileViewArea'>{'Area of Interest:  '}<p style={{fontStyle: "italic", margin: "0px",textDecoration:"inherit", display:"inline"}}>{data.Area}</p></p> : null}
                     {data.extraDetails?.map(detail => <p className='profileViewExtras'>{detail}</p>)}
-                    {(data.email !== "") ? <p className='profileViewExtras'>{'Email: '}<a href={'mailto: ' + data.email} style={{fontStyle: "italic", textDecoration: "none", color: "inherit"}}>{data.email}</a></p> : null}
-                    {(data.link !== "") ? <p className='profileViewExtras'><a href={data.link}>Link to website</a> </p> : null}
+                    {(data.email !== "") ? <p className='profileViewExtras'>{'Email: '}<Link to={'mailto: ' + data.email} style={{fontStyle: "italic", textDecoration: "none", color: "inherit"}}>{data.email}</Link></p> : null}
+                    {(data.link !== "") ? <p className='profileViewExtras'><Link to={data.link}>Link to website</Link> </p> : null}
                 </div>
             </div>
         )

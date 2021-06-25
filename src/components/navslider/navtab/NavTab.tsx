@@ -23,12 +23,12 @@ class NavTab extends React.Component<NavTabProp,NavTabState>{
     render(){
         const Icon = this.props.icon as React.ElementType;
         return(
-            <a href={this.props.urlLink} style={{textDecoration: 'none', color: 'inherit'}}>
+            <Link to={this.props.urlLink} style={{textDecoration: 'none', color: 'inherit'}}>
                 <div className={((this.props.currentTab===this.props.urlLink) ? 'active':'inactive') + 'NavTab'} onClick={this.onClick}>
                     {(this.props.icon === undefined) ? <BsDot/> : <Icon/>}
                     <p className='navTabName'>{this.props.name}</p>
                 </div>
-            </a>
+            </Link>
         )
     }
 }
