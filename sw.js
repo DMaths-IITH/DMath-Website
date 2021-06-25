@@ -27,7 +27,7 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-477795e82a66cc80611d.js"
+    "url": "webpack-runtime-bb83473b30e390322b70.js"
   },
   {
     "url": "styles.bfa0dba137e537b54259.css"
@@ -57,11 +57,11 @@ self.__precacheManifest = [
     "url": "ff239f9d-61082f8949ecefc105bb.js"
   },
   {
-    "url": "app-94c87bfb9ce2dd0e2907.js"
+    "url": "app-e503b346c807c2373f2d.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "fd7e0f8966c5f39bf51605761c8dc908"
+    "revision": "ebe9a664b46ee5005d38069517a03afc"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-9a6308182c6980a7ad4f.js"
@@ -72,7 +72,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "1ae6d498d92be25a591c068b10989420"
+    "revision": "0db6db1c91b5096d7ddac148003108d4"
   },
   {
     "url": "polyfill-5f1b6d6296d4af6c0bbb.js"
@@ -171,7 +171,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/DMath-Website/app-94c87bfb9ce2dd0e2907.js`))) {
+  if (!resources || !(await caches.match(`/DMath-Website/app-e503b346c807c2373f2d.js`))) {
     return await fetch(event.request)
   }
 
