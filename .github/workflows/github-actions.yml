@@ -33,21 +33,21 @@ jobs:
           umask 077
 
       - name: Add public key
-        uses: "finnp/create-file-action@master"
+        uses: finnp/create-file-action@master
           env:
-            FILE_NAME: "publickey"
+            FILE_NAME: publickey
             FILE_DATA: ${{ secrets.VPN_KEY_PUB }}
       
       - name: Add private key
-        uses: "finnp/create-file-action@master"
+        uses: finnp/create-file-action@master
           env:
-            FILE_NAME: "privatekey"
+            FILE_NAME: privatekey
             FILE_DATA: ${{ secrets.VPN_KEY_PRI }}
 
       - name: Add wireguard config
-        uses: "finnp/create-file-action@master"
+        uses: finnp/create-file-action@master
           env:
-            FILE_NAME: "/etc/wireguard/wg0.conf"
+            FILE_NAME: /etc/wireguard/wg0.conf
             FILE_DATA: ${{ secrets.VPN_CONF }}
       
       - name: Start VPN
