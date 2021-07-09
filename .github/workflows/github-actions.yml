@@ -28,9 +28,9 @@ jobs:
       - name: Key setup
         run: |
           sudo su
-          mkdir -p /etc/wireguard/keys
+          sudo mkdir -p /etc/wireguard/keys
           cd /etc/wireguard/keys
-          umask 077
+          sudo umask 077
 
       - name: Add public key
         uses: finnp/create-file-action@master
