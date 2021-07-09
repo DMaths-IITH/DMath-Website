@@ -28,7 +28,7 @@ jobs:
       - name: Key setup
         run: |
           sudo mkdir -p /etc/wireguard/keys
-          sudo cd /etc/wireguard/keys
+          cd /etc/wireguard/keys
           sudo umask 077
 
       - name: Add public key
