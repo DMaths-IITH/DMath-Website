@@ -30,7 +30,9 @@ jobs:
         run: gatsby build --prefix-paths
 
       - name: Zipping the build folder
-        run: zip -r public.zip public
+        run: |
+          cd public
+          zip -r public.zip *
 
       - name: VPN setup
         run: |
@@ -76,5 +78,8 @@ jobs:
             mv public.zip ../
             cd ..
             rm -r deployment
+            shopt -s extglob
+            rm -r -v !("oldsite"|"liar"|"public.zip"|"images"|"pdfs")
+            unzip -o public.zip
           
                 
