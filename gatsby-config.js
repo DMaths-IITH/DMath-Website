@@ -2,7 +2,6 @@ module.exports = {
   siteMetadata: {
     title: "Department of Mathematics",
   },
-  pathPrefix: "/DMath-Website",
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",

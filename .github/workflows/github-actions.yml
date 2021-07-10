@@ -27,7 +27,7 @@ jobs:
         run: gatsby clean
       
       - name: Gatsby Build
-        run: gatsby build --prefix-paths
+        run: gatsby build
 
       - name: Zipping the build folder
         run: |

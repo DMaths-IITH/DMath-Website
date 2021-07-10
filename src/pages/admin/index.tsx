@@ -4,6 +4,7 @@ import { FirebaseUtils } from '../../utils/FirebaseUtils';
 import './Admin.css';
 import ReactCircularLoader from '../../components/loader/ReactCircularLoader';
 import { Link } from 'gatsby';
+import { deploy } from '../../utils/DeployUtils';
 
 
 interface AdminState{
@@ -75,13 +76,31 @@ class Admin extends React.Component<AdminProps, AdminState>{
 
     createNewPage = async (newPage: {path:string,type:string}) =>{
         const json_path = (newPage.path.split("/")).join("-");
-        FirebaseUtils.saveChanges("pages",json_path,{components:[]});
-        const pages = await FirebaseUtils.getPageData("pages","pages");
-        pages[json_path] = newPage.type;
-        FirebaseUtils.saveChanges("pages","pages",pages);
-        this.setState({
-            addNewPage: false
-        })
+        let base_data: Object = {
+            "components":[]
+        };
+        if(newPage.type === "./src/components/selectview/SelectView.tsx"){
+            base_data = {
+                "title": "Page Title",
+                "options": [
+                    "Default"
+                ],
+                "Default": {
+                    "components": []
+                }
+            }
+        }
+        const token = prompt("Please provide the access token");
+        if(token){
+            FirebaseUtils.saveChanges("pages",json_path,base_data);
+            const pages = await FirebaseUtils.getPageData("pages","pages");
+            pages[json_path] = newPage.type;
+            FirebaseUtils.saveChanges("pages","pages",pages);
+            deploy(token);
+            this.setState({
+                addNewPage: false
+            })
+        }
     }
 
     getAdminComponent = () => {
@@ -106,8 +125,8 @@ class Admin extends React.Component<AdminProps, AdminState>{
                     <div className="adminNewPageRow">
                         <div style={{marginRight:"10px"}}>Select the page type:</div>
                         <select onChange={(event)=>newPage.type = event.target.value}>
-                            <option value="./src/components/pageview/PageView.tsx">Default</option>
-                            <option value="./src/components/yearview/YearView.tsx">Year Template</option>
+                            <option value="./src/components/pageview/PageView.tsx">Default template</option>
+                            <option value="./src/components/selectview/SelectView.tsx">Selector Template</option>
                         </select>
                     </div>
                     <button onClick={()=>{this.createNewPage(newPage)}}>Create Page</button>

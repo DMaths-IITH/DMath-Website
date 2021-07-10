@@ -1,9 +1,6 @@
 import React from 'react';
 import { GridViewModel } from '../../models/Model';
 import { getComponent, getNewId, getNewModel } from '../../utils/PageUtils';
-import AddNew from '../addnew/AddNew';
-import DeleteThis from '../deletethis/DeleteThis';
-import InfoView from '../infoview/InfoView';
 import './GridView.css';
 
 interface GridViewProps{
@@ -47,6 +44,10 @@ class GridView extends React.Component<GridViewProps>{
 
     getEditElements = () => {
         const data = this.props.page_data["data"][this.props.component_id] as GridViewModel;
+        const widgets = [
+            "infoview",
+            "profileview"
+        ]
         return(
             <div className={this.props.type + "Edit"}>
                 {data.items.map((each, index) => <div className="gridViewitemColEdit">
@@ -55,8 +56,9 @@ class GridView extends React.Component<GridViewProps>{
                 </div>)}
                 <select style={{width:"200px"}} value={"Add New"} onChange={(event)=>{this.addNewComponent(event.target.value,  data.items.length)}}>
                     <option value={"Add New Element"}>{"Add New Element"}</option>
-                    <option value={"infoview"}>{"infoview"}</option>
-                    <option value={"profileview"}>{"profileview"}</option>
+                    {widgets.map((widget)=>
+                        <option value={widget}>{widget}</option>
+                    )}
                 </select>
             </div>
         )
