@@ -42,6 +42,8 @@ jobs:
       - name: SSH trial
         run: |
           sudo apt-get install sshpass
-          sshpass -p ${{ secrets.REMOTE_PWSD }} ssh ${{ secrets.REMOTE_HOST }} -p${{ secrets.REMOTE_PORT }}
+          sudo sshpass -e ssh ${{ secrets.REMOTE_HOST }} -p${{ secrets.REMOTE_PORT }}
           ls -a
+        env:
+          SSHPASS: ${{ secrets.REMOTE_PWSD }}
                 
