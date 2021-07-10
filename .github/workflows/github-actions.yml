@@ -42,9 +42,12 @@ jobs:
           echo "SSHPASS=${{ secrets.REMOTE_PWSD }}" >> $GITHUB_ENV
 
       - name: SSH trial
-        run: |
-          sudo apt-get install sshpass
-          sudo sshpass -e ssh ${{ secrets.REMOTE_HOST }} -p${{ secrets.REMOTE_PORT }}
-          ls -a
-        
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.REMOTE_IP }}
+          username: ${{ secrets.REMOTE_USER }}
+          password: ${{ secrets.REMOTE_PSWD }}
+          port: ${{ secrets.REMOTE_PORT }}
+        run: ls -a
+          
                 
