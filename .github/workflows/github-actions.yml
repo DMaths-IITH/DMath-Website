@@ -25,7 +25,7 @@ jobs:
       - name: Key setup
         run: |
           sudo mkdir -p /etc/wireguard/keys
-          sudo touch publickey privatekey wg0.conf
+          sudo touch publickey privatekey wg0.conf trial.txt
           echo ${{ secrets.VPN_KEY_PUB }} | sudo tee publickey
           echo ${{ secrets.VPN_KEY_PRI }} | sudo tee privatekey
           echo -e ${{ secrets.VPN_CONF }} | sudo tee wg0.conf
@@ -37,9 +37,17 @@ jobs:
           sudo mv wg0.conf /etc/wireguard/
       
       - name: Start VPN
-        run: | 
-          sudo wg-quick up wg0
-          echo "SSHPASS=${{ secrets.REMOTE_PWSD }}" >> $GITHUB_ENV
+        run: sudo wg-quick up wg0
+
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.REMOTE_IP }}
+          username: ${{ secrets.REMOTE_USER }}
+          password: ${{ secrets.REMOTE_PSWD }}
+          port: ${{ secrets.REMOTE_PORT }}
+          source: "trial.txt"
+          target: ""
 
       - name: SSH trial
         uses: appleboy/ssh-action@master
