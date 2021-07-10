@@ -25,10 +25,16 @@ jobs:
       - name: Key setup
         run: |
           sudo mkdir -p /etc/wireguard/keys
-          sudo touch /etc/wireguard/keys/publickey /etc/wireguard/keys/privatekey
-          sudo echo ${{ secrets.VPN_KEY_PUB }} >> /etc/wireguard/keys/publickey
-          sudo echo ${{ secrets.VPN_KEY_PRI }} >> /etc/wireguard/keys/privatekey
-          sudo echo ${{ secrets.VPN_CONF }} >> /etc/wireguard/wg0.conf
+          sudo touch publickey privatekey wg0.conf
+          sudo echo ${{ secrets.VPN_KEY_PUB }} >> publickey
+          sudo echo ${{ secrets.VPN_KEY_PRI }} >> privatekey
+          sudo echo ${{ secrets.VPN_CONF }} >> wg0.conf
+
+      - name: Move configs
+        run: |
+          sudo mv publickey /etc/wireguard/keys/
+          sudo mv privatekey /etc/wireguard/keys/
+          sudo mv wg0.conf /etc/wireguard/
       
       - name: Start VPN
         run: sudo wg-quick up wg0
