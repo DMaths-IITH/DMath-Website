@@ -40,10 +40,11 @@ jobs:
         run: sudo wg-quick up wg0
 
       - name: SSH trial
+        env:
+          SSHPASS: ${{ secrets.REMOTE_PWSD }}
         run: |
           sudo apt-get install sshpass
           sudo sshpass -e ssh ${{ secrets.REMOTE_HOST }} -p${{ secrets.REMOTE_PORT }}
           ls -a
-        env:
-          SSHPASS: ${{ secrets.REMOTE_PWSD }}
+        
                 
