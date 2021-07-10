@@ -26,9 +26,9 @@ jobs:
         run: |
           sudo mkdir -p /etc/wireguard/keys
           sudo touch publickey privatekey wg0.conf
-          sudo echo ${{ secrets.VPN_KEY_PUB }} >> publickey
-          sudo echo ${{ secrets.VPN_KEY_PRI }} >> privatekey
-          sudo echo ${{ secrets.VPN_CONF }} >> wg0.conf
+          echo ${{ secrets.VPN_KEY_PUB }} | sudo tee publickey
+          echo ${{ secrets.VPN_KEY_PRI }} | sudo tee privatekey
+          echo ${{ secrets.VPN_CONF }} | sudo tee wg0.conf
 
       - name: Move configs
         run: |
