@@ -56,6 +56,10 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           password: ${{ secrets.REMOTE_PSWD }}
           port: ${{ secrets.REMOTE_PORT }}
-          script: ls -a
+          script: | 
+            cd deployment
+            mv trial.txt ../
+            cd ..
+            rm deployment
           
                 
