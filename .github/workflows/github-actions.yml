@@ -37,15 +37,11 @@ jobs:
           sudo mv wg0.conf /etc/wireguard/
       
       - name: Start VPN
-        run: |
-          sudo wg-quick up wg0
-          ping ${{ secrets.REMOTE_IP }}
+        run: sudo wg-quick up wg0
 
       - name: SSH trial
-        uses: garygrossgarten/github-action-ssh@release
-        with:
-          command: ls -a
-          host: ${{ secrets.REMOTE_HOST }}
-          port: ${{ secrets.REMOTE_PORT }}
-          password: ${{ secrets.REMOTE_PSWD }}
+        run: |
+          sudo apt-get install sshpass
+          sshpass -p ${{ secrets.REMOTE_PWSD }} ssh ${{ secrets.REMOTE_HOST }} -p${{ secrets.REMOTE_PORT }}
+          ls -a
                 
