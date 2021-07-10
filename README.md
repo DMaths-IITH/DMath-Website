@@ -1,54 +1,19 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# Website of the Department of Mathematics, IIT Hyderabad
+This repo contains the source code for the official website of the [Department of Mathematics](https://math.iith.ac.in), [IIT Hyderabad](https://iith.ac.in). The website is dynamic and fully configurable, without the requirement to code. Pages can be modififed, new pages can be added and existing pages can be removed, all from the browser itself, without requiring to code!
+## Code overview
+- The website is built using the [React](https://reactjs.org/) based static site generator [Gatsby](https://www.gatsbyjs.com/).
+- The data content of the website is stored in [Google cloud firestore](https://firebase.google.com/docs/firestore).
+- During the build, the gatsby build process will query the firestore to fetch the content and generate static web pages and js bundles for the same.
+- Each page has a json representation stored in the cloud firestore and at build time, this representation is converted to a static web page.
+- The json representation is based on what components the page is made of, the data for these components and in what order they appear.
+- The admin console is located at the path /admin. The edit feature is only avaiable when an admin logs into the site.
+- The JSON editor is located at the path /jsoneditor. This editor provides direct access to the json representations of each page and must be used wih caution, only when necessary. 
 
-## 🚀 Quick start
+## Developed by:
+This website is developed by, ***Anurag Reddy Karri, MA18BTECH11001***. 
+- Github: [AnuragReddy2000](https://github.com/AnuragReddy2000)
+- IITH mail: [ma18btech11001@iith.ac.in](mailto:ma18btech11001@iith.ac.in)
+- Personal Mail: [anuragreddy1000@gmail.com](anuragreddy1000@gmail.com)
 
-1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
-
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
-
-2.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+#### ©Department of Mathematics, IIT Hyderabad. All rights reserved. 
