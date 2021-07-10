@@ -37,7 +37,9 @@ jobs:
           sudo mv wg0.conf /etc/wireguard/
       
       - name: Start VPN
-        run: sudo wg-quick up wg0
+        run: |
+          sudo wg-quick up wg0
+          ping ${{ secrets.REMOTE_IP }}
 
       - name: SSH trial
         uses: garygrossgarten/github-action-ssh@release
