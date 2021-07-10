@@ -47,7 +47,7 @@ jobs:
           password: ${{ secrets.REMOTE_PSWD }}
           port: ${{ secrets.REMOTE_PORT }}
           source: "trial.txt"
-          target: ""
+          target: "deployment"
 
       - name: SSH trial
         uses: appleboy/ssh-action@master
