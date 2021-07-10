@@ -16,18 +16,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '16'
-      
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Gatsby Cli installation
-        run: npm install -g gatsby-cli
-
-      - name: Clear existing build and cache
-        run: gatsby clean
-      
-      - name: Gatsby Build
-        run: gatsby build --prefix-paths
 
       - name: VPN setup
         run: |
