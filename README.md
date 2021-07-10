@@ -1,5 +1,5 @@
 # Website of the Department of Mathematics, IIT Hyderabad
-This repo contains the source code for the official website of the [Department of Mathematics](https://math.iith.ac.in), [IIT Hyderabad](https://iith.ac.in). The website is dynamic and fully configurable, without the requirement to code. Pages can be modififed, new pages can be added and existing pages can be removed, all from the browser itself, without requiring to code!
+This repo contains the source code for the official website of the [Department of Mathematics](https://math.iith.ac.in), [IIT Hyderabad](https://iith.ac.in). The website is dynamic and fully configurable, without the requirement to code. Pages can be modififed, new pages can be added and existing pages can be removed, all from the browser itself, by enbling the admin edit mode.
 ## Code overview
 - The website is built using the [React](https://reactjs.org/) based static site generator [Gatsby](https://www.gatsbyjs.com/).
 - The data content of the website is stored in [Google cloud firestore](https://firebase.google.com/docs/firestore).

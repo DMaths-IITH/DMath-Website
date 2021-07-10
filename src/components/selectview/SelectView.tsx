@@ -5,7 +5,7 @@ import {getComponent, getNewId, getNewModel} from '../../utils/PageUtils';
 import DeleteThis from '../deletethis/DeleteThis';
 import AdminBar from '../adminbar/AdminBar';
 import { Helmet } from 'react-helmet';
-import SelectBar from '../selectbar/SelectBar';
+import SelectBar from './selectbar/SelectBar';
 import { deploy } from '../../utils/DeployUtils';
 
 interface SelectViewProps{

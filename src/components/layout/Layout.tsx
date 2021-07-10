@@ -1,9 +1,8 @@
 import React from 'react';
 import './Layout.css';
-import TitleBar from '../titlebar/TitleBar';
-import NavSlider from '../navslider/NavSlider';
+import TitleBar from './titlebar/TitleBar';
+import NavSlider from './navslider/NavSlider';
 import {Swipeable} from '../swipeable/Swipeable';
-import Marquee from '../marquee/marquee';
 import {Helmet} from 'react-helmet';
 
 interface LayoutProps {}

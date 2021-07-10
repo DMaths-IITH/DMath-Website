@@ -3,9 +3,9 @@ import './NavSlider.css';
 import NavTab from './navtab/NavTab';
 import DropDownTab from './dropdowntab/DropdownTab';
 import {AiOutlineHome} from 'react-icons/ai';
-import {getIcon} from '../../utils/IconmapUtils';
+import {getIcon} from '../../../utils/IconmapUtils';
 import {Link} from 'gatsby';
-import {FirebaseUtils} from "../../utils/FirebaseUtils";
+import {FirebaseUtils} from "../../../utils/FirebaseUtils";
 
 interface NavSliderProps{
     currentTab: string;
