@@ -1,27 +1,27 @@
 import React from 'react';
-import './TableView.css'
+import './Accordion.css'
 import {RiArrowDropDownLine} from 'react-icons/ri';
 import {RiArrowDropUpLine} from 'react-icons/ri';
-import { TableViewModel } from '../../models/Model';
+import { AccordionModel } from '../../models/Model';
 import { Link } from 'gatsby';
 
-interface TableViewState{
+interface AccordionState{
     expand: Boolean;
-    data: TableViewModel;
+    data: AccordionModel;
 }
 
-interface TableViewProps{
+interface AccordionProps{
     component_id: string;
     edit_mode: boolean;
     page_data: Object;
 }
 
-class TableView extends React.Component<TableViewProps,TableViewState>{
-    constructor(props: TableViewProps, state: TableViewState){
+class Accordion extends React.Component<AccordionProps, AccordionState>{
+    constructor(props: AccordionProps, state: AccordionState){
         super(props, state);
         this.state = {
             expand: false,
-            data: (this.props.page_data["data"][this.props.component_id] as TableViewModel)
+            data: (this.props.page_data["data"][this.props.component_id] as AccordionModel)
         }
     }
 
@@ -102,4 +102,4 @@ class TableView extends React.Component<TableViewProps,TableViewState>{
     }
 }
 
-export default TableView;
+export default Accordion;

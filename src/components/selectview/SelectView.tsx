@@ -6,7 +6,6 @@ import DeleteThis from '../deletethis/DeleteThis';
 import AdminBar from '../adminbar/AdminBar';
 import { Helmet } from 'react-helmet';
 import SelectBar from './selectbar/SelectBar';
-import { deploy } from '../../utils/DeployUtils';
 
 interface SelectViewProps{
     pageContext: {
@@ -122,11 +121,7 @@ class SelectView extends React.Component<SelectViewProps, SelectViewState>{
     }
 
     saveChanges = () =>{
-        const token = prompt("Please provide the access token");
-        if(token){
-            FirebaseUtils.saveChanges("pages",this.props.pageContext.page, this.state.page_data);
-            deploy(token);
-        }
+        FirebaseUtils.saveChanges("pages",this.props.pageContext.page, this.state.page_data);
     }
 
     render(){

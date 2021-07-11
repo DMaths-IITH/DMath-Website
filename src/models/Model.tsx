@@ -25,7 +25,7 @@ interface ProfileViewModel{
     extraDetails: string[];
 }
 
-interface TableViewModel{
+interface AccordionModel{
     title: string;
     content: string;
     speaker: string;
@@ -38,12 +38,6 @@ interface TableViewModel{
 
 interface CarouselModel{
     images: string[];
-}
-
-interface BatchViewProps{
-    GrpImage: string;
-    BatchName: string;
-    Students: string[];
 }
 
 interface PublicationModel{
@@ -76,5 +70,5 @@ interface MarqueeModel{
     content: string;
 }
 
-export {InfoViewModel, ProfileViewModel, TableViewModel, BatchViewModel, ImageViewModel,
-    CarouselModel, BatchViewProps, PublicationModel, GridViewModel, TableModel, MarqueeModel}
+export {InfoViewModel, ProfileViewModel, AccordionModel, BatchViewModel, ImageViewModel,
+    CarouselModel, PublicationModel, GridViewModel, TableModel, MarqueeModel}

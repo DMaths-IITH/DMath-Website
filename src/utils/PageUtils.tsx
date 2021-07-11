@@ -4,9 +4,9 @@ import GridView from "../components/gridview/GridView";
 import InfoView from "../components/infoview/InfoView";
 import ProfileView from "../components/profileview/ProfileView";
 import PublicationView from "../components/publicationview/PublicationView";
-import TableView from "../components/tableview/TableView";
+import Accordion from "../components/accordion/Accordion";
 import ImageView from "../components/imageview/ImageView";
-import { BatchViewModel, CarouselModel, GridViewModel, ImageViewModel, InfoViewModel, ProfileViewModel, PublicationModel, TableViewModel, TableModel, MarqueeModel} from "../models/Model"
+import { BatchViewModel, CarouselModel, GridViewModel, ImageViewModel, InfoViewModel, ProfileViewModel, PublicationModel, AccordionModel, TableModel, MarqueeModel} from "../models/Model"
 import React from 'react';
 import Table from "../components/table/Table";
 import Marquee from "../components/marquee/Marquee";
@@ -22,7 +22,7 @@ let getNewModel = (type: string) => {
                 links: [],
                 rightFooter: ""
             } as InfoViewModel;
-        case "tableview":
+        case "accordion":
             return {
                 title: "",
                 content: "",
@@ -32,7 +32,7 @@ let getNewModel = (type: string) => {
                     "link": "", 
                     "linktext": ""
                 }
-            } as TableViewModel;
+            } as AccordionModel;
         case "profileview":
             return {
                 Image: "",
@@ -90,7 +90,7 @@ let getNewModel = (type: string) => {
     }
 }
 
-let isNumeric = (value) => {
+let isNumeric = (value: string) => {
     return /^\d+$/.test(value);
 }
 
@@ -103,8 +103,8 @@ let getComponent = (component_id: string, type: string, edit_mode:boolean, conte
     switch(type){
         case "infoview": 
             return <InfoView key={component_id} edit_mode={edit_mode} component_id={component_id} page_data={context}/>
-        case "tableview":
-            return <TableView key={component_id} edit_mode={edit_mode} component_id={component_id} page_data={context}/>
+        case "accordion":
+            return <Accordion key={component_id} edit_mode={edit_mode} component_id={component_id} page_data={context}/>
         case "profileview":
             return <ProfileView key={component_id} edit_mode={edit_mode} component_id={component_id} page_data={context}/>
         case "publicationview":

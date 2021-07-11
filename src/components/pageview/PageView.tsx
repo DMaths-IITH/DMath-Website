@@ -5,7 +5,6 @@ import {getComponent, getNewId, getNewModel} from '../../utils/PageUtils';
 import DeleteThis from '../deletethis/DeleteThis';
 import AdminBar from '../adminbar/AdminBar';
 import { Helmet } from 'react-helmet';
-import { deploy } from '../../utils/DeployUtils';
 
 interface PageViewProps{
     pageContext: {
@@ -29,7 +28,7 @@ class PageView extends React.Component<PageViewProps, PageViewState>{
         "gridviewthree",
         "carousel",
         "batchview",
-        "tableview",
+        "accordion",
         "publicationview",
         "imageview",
         "table",
@@ -70,11 +69,7 @@ class PageView extends React.Component<PageViewProps, PageViewState>{
     }
 
     saveChanges = () =>{
-        const token = prompt("Please provide the access token");
-        if(token){
-            FirebaseUtils.saveChanges("pages",this.props.pageContext.page, this.state.page_data);
-            deploy(token);
-        }
+        FirebaseUtils.saveChanges("pages",this.props.pageContext.page, this.state.page_data);
     }
 
     render(){

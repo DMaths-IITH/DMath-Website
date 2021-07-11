@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactCircularLoader from '../../components/loader/ReactCircularLoader';
-import { deploy } from '../../utils/DeployUtils';
 import { FirebaseUtils } from '../../utils/FirebaseUtils';
 import './JsonEditor.css';
 
@@ -53,11 +52,7 @@ class JsonEditor extends React.Component<JsonEditorProps, JsonEditorState>{
 
     saveChanges = () => {
         if(this.state.selectedPage !== "Not Selected" && this.state.page_data !== {}){
-            const token = prompt("Please provide the access token");
-            if(token){
-                FirebaseUtils.saveChanges("pages",this.state.selectedPage, this.state.page_data); 
-                deploy(token);
-            }
+            FirebaseUtils.saveChanges("pages",this.state.selectedPage, this.state.page_data); 
         }
         else{
             alert("Please select a page to edit.");

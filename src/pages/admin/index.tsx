@@ -103,6 +103,13 @@ class Admin extends React.Component<AdminProps, AdminState>{
         }
     }
 
+    deployChanges = () => {
+        const token = prompt("Please provide the access token");
+        if(token){
+            deploy(token);
+        }
+    }
+
     getAdminComponent = () => {
         const user = FirebaseUtils.getUser();
         let newPage = {
@@ -116,6 +123,7 @@ class Admin extends React.Component<AdminProps, AdminState>{
                 <div>
                     <Link to="/jsoneditor"><button>Go to Json Editor</button></Link>
                     <button style={{marginLeft:"10px"}} onClick={()=>this.setState({addNewPage: !this.state.addNewPage})}>Add a new page</button>
+                    <button style={{marginLeft:"10px"}} onClick={()=>{this.deployChanges()}}>Deploy Changes</button>
                 </div>
                 {this.state.addNewPage ? <div style={{marginTop: "15px", border:"2px solid rgb(170,170,170)", padding:"10px"}}>
                     <div className="adminNewPageRow">
