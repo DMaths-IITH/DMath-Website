@@ -32,7 +32,8 @@ class PageView extends React.Component<PageViewProps, PageViewState>{
         "publicationview",
         "imageview",
         "table",
-        "marquee"
+        "marquee",
+        "iframe"
     ]
 
     constructor(props: PageViewProps, state: PageViewState){

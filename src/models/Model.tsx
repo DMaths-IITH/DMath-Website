@@ -63,12 +63,20 @@ interface TableModel{
     title: string;
     cols: number;
     headers: string[];
-    rows: string[][];
+    rows: {
+        entries: string[]
+    }[];
 }
 
 interface MarqueeModel{
     content: string;
 }
 
+interface IframeModel{
+    url: string;
+    width: string;
+    height: string;
+}
+
 export {InfoViewModel, ProfileViewModel, AccordionModel, BatchViewModel, ImageViewModel,
-    CarouselModel, PublicationModel, GridViewModel, TableModel, MarqueeModel}
+    CarouselModel, PublicationModel, GridViewModel, TableModel, MarqueeModel, IframeModel}

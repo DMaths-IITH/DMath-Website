@@ -12,7 +12,7 @@ class Table extends React.Component<TableProps>{
 
     editRowElement = (rowIndex: number, colIndex: number, value: string) => {
         const data = this.props.page_data["data"];
-        (data[this.props.component_id]["rows"] as string[][])[rowIndex][colIndex] = value;
+        ((data[this.props.component_id]["rows"] as {entries: string[]}[] )[rowIndex]).entries[colIndex] = value;
         this.props.page_data["edit"](data);
     }
 
@@ -25,7 +25,9 @@ class Table extends React.Component<TableProps>{
 
     addrow = () =>{
         const data = this.props.page_data["data"];
-        data[this.props.component_id]["rows"] = [...(data[this.props.component_id]["rows"] as string[][]), new Array(Number(data[this.props.component_id]["cols"])).fill("")];
+        (data[this.props.component_id]["rows"] as {entries: string[]}[] ).push({
+            entries: new Array(Number(data[this.props.component_id]["cols"])).fill("")
+        });
         this.props.page_data["edit"](data);
     }
 
@@ -34,10 +36,10 @@ class Table extends React.Component<TableProps>{
     }
 
     delete = () => {
-        const row_ind = prompt("PLease enter the index of the row to be deleted:");
+        const row_ind = prompt("Please enter the index of the row to be deleted:");
         if (this.isNumeric(row_ind)){
             const data = this.props.page_data["data"];
-            (data[this.props.component_id]["rows"] as string[][]).splice(Number(row_ind)-1, 1);
+            (data[this.props.component_id]["rows"] as {entries: string[]}[]).splice(Number(row_ind)-1, 1);
             this.props.page_data["edit"](data);
         }
         else{
@@ -61,7 +63,7 @@ class Table extends React.Component<TableProps>{
                         {data.headers.map((each, index) => <th >{each}</th>)}
                     </tr>
                     {data.rows.map((each, rowIndex) => <tr>
-                        {each.map((col, colIndex) => <td >{col}</td>) }
+                        {each.entries.map((col, colIndex) => <td >{col}</td>) }
                     </tr>)}
                 </table>
             </div>
@@ -78,7 +80,7 @@ class Table extends React.Component<TableProps>{
                         {data.headers.map((each, index) => <th><input style={{width:"100%"}} placeholder={"Header No. " + (index+1)} value={each} onChange={(event)=>this.editHeaderElement(index, event.target.value)}></input></th>)}
                     </tr>
                     {data.rows.map((each, rowIndex) => <tr>
-                        {each.map((col, colIndex) => <td><input placeholder={"Row "+(rowIndex+1)+" Column " + (colIndex+1)} value={col} onChange={(event=>this.editRowElement(rowIndex, colIndex, event.target.value))}></input></td>) }
+                        {each.entries.map((col, colIndex) => <td><input placeholder={"Row "+(rowIndex+1)+" Column " + (colIndex+1)} value={col} onChange={(event=>this.editRowElement(rowIndex, colIndex, event.target.value))}></input></td>) }
                     </tr>)}
                 </table>
                 <div>

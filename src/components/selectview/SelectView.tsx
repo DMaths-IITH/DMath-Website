@@ -30,11 +30,12 @@ class SelectView extends React.Component<SelectViewProps, SelectViewState>{
         "gridviewthree",
         "carousel",
         "batchview",
-        "tableview",
+        "accordion",
         "publicationview",
         "imageview",
         "table",
-        "marquee"
+        "marquee",
+        "iframe"
     ]
 
     constructor(props: SelectViewProps, state: SelectViewState){

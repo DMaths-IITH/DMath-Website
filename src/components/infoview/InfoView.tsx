@@ -50,7 +50,7 @@ class InfoView extends React.Component<InfoViewProps>{
         return <div className='infoViewbox'>
             {(data.title !== undefined && data.title!=="") ? <div className='infoViewtitle' style={{color: titlecolor, textAlign: data.titleAlign}}>{data.title}</div>: null}
             {(data.info !== undefined && data.info!=="") ? <p className='infoViewcontent'>{data.info}</p> : null}
-            {data.links.map(each => <p style={{alignSelf: 'flex-start', marginTop:'auto'}}><Link to={each.link} target='_blank'>{each.linktext}</Link></p>)}
+            {data.links.map(each => <p style={{alignSelf: 'flex-start', marginTop:'auto'}}><a href={each.link} target='_blank'>{each.linktext}</a></p>)}
             {data.rightFooter ? <p style={{alignSelf:'flex-end'}}>{data.rightFooter}</p>: null}
         </div>
     }

@@ -6,10 +6,11 @@ import ProfileView from "../components/profileview/ProfileView";
 import PublicationView from "../components/publicationview/PublicationView";
 import Accordion from "../components/accordion/Accordion";
 import ImageView from "../components/imageview/ImageView";
-import { BatchViewModel, CarouselModel, GridViewModel, ImageViewModel, InfoViewModel, ProfileViewModel, PublicationModel, AccordionModel, TableModel, MarqueeModel} from "../models/Model"
+import { BatchViewModel, CarouselModel, GridViewModel, ImageViewModel, InfoViewModel, ProfileViewModel, PublicationModel, AccordionModel, TableModel, MarqueeModel, IframeModel} from "../models/Model"
 import React from 'react';
 import Table from "../components/table/Table";
 import Marquee from "../components/marquee/Marquee";
+import IframeView from "../components/iframeview/IframeView";
 
 let getNewModel = (type: string) => {
     switch(type){
@@ -87,6 +88,12 @@ let getNewModel = (type: string) => {
             return{
                 content: ""
             } as MarqueeModel;
+        case "iframe":
+            return{
+                url:"",
+                height:"100%",
+                width:"100%"
+            } as IframeModel;
     }
 }
 
@@ -123,6 +130,8 @@ let getComponent = (component_id: string, type: string, edit_mode:boolean, conte
             return <Table key={component_id} edit_mode={edit_mode} component_id={component_id} page_data={context}/>
         case "marquee":
             return <Marquee key={component_id} edit_mode={edit_mode} component_id={component_id} page_data={context}/>
+        case "iframe":
+            return <IframeView key={component_id} edit_mode={edit_mode} component_id={component_id} page_data={context}/>
     }
 }
 
