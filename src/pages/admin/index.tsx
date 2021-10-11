@@ -120,8 +120,9 @@ class Admin extends React.Component<AdminProps, AdminState>{
             <div className="adminWelcomeBox">
                 <h2 className="adminTitle">DMath Admin</h2>
                 <p>{"Welcome to the admin page, " + user.name + " (" + user.email + ")"}</p>
-                <div>
+                <div className="adminControlButtons">
                     <Link to="/jsoneditor"><button>Go to Json Editor</button></Link>
+                    <Link to="/tabeditor"><button style={{marginLeft:"10px"}}>Go to Tab Editor</button></Link>
                     <button style={{marginLeft:"10px"}} onClick={()=>this.setState({addNewPage: !this.state.addNewPage})}>Add a new page</button>
                     <button style={{marginLeft:"10px"}} onClick={()=>{this.deployChanges()}}>Deploy Changes</button>
                 </div>
