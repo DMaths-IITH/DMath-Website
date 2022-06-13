@@ -48,5 +48,8 @@
   },
   "devDependencies": {
     "gatsby-plugin-asset-path": "^3.0.4"
-  }
+  },
+  "resolutions": {
+    "graphql": "14.6.0"
+ }
 }
