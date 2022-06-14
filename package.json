@@ -41,9 +41,9 @@
     "react-icons": "^4.2.0",
     "react-json-view": "^1.21.3",
     "react-swipeable": "^6.1.2",
-    "ts-node": "^9.1.1",
+    "ts-node": "^10.8.1",
     "typeface-lato": "^1.1.13",
-    "typescript": "^4.2.4",
+    "typescript": "^4.7.3",
     "uuid": "^3.4.0"
   },
   "devDependencies": {
@@ -51,5 +51,5 @@
   },
   "resolutions": {
     "graphql": "14.6.0"
- }
+  }
 }
