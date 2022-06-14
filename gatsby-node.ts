@@ -3,7 +3,7 @@ import { GatsbyNode } from 'gatsby';
 import * as path from 'path';
 
 export const createPages: GatsbyNode['createPages'] = async ({ actions: { createPage } }) => {
-    const allPages = (await FirebaseUtils.getPageData("pages","pages")) as Object;
+    const allPages = (await FirebaseUtils.getPageData("pages","pages")) as any;
     console.log(allPages);
     const _pages = Object.keys(allPages);
     _pages.forEach(async page  => {
