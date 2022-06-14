@@ -77,7 +77,7 @@ export class FirebaseUtils {
     }
 
     static getDocNames = async (collection: string): Promise<string[]> => {
-        let output = [];
+        let output:string[] = [];
         const app = FirebaseUtils.getFirebaseApp()
         const db = app?.firestore().collection(collection)
         const snap = await db.get();
