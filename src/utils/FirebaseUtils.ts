@@ -90,7 +90,7 @@ export class FirebaseUtils {
     static verifyUser = async () => {
         try{
             const result = await FirebaseUtils.getPageData("members","editors");
-            if(result !== {}){
+            if(Object.keys(result).length !== 0){
                 return true;
             }
         }
