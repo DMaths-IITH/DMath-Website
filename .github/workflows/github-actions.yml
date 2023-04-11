@@ -67,6 +67,7 @@ jobs:
           source: "public.zip"
           target: "deployment"
           timeout: 60s
+          debug: true
 
       - name: Unzip and deploy changes on server
         uses: appleboy/ssh-action@master
