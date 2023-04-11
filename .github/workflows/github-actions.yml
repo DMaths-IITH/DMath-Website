@@ -66,6 +66,7 @@ jobs:
           port: ${{ secrets.REMOTE_PORT }}
           source: "public.zip"
           target: "deployment"
+          timeout: 60s
 
       - name: Unzip and deploy changes on server
         uses: appleboy/ssh-action@master
