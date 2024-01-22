@@ -87,4 +87,4 @@ jobs:
           path: /*.zip
       
       - name: Secure transfer of build files to server
-        run: sftp -r -i sftp_private_key {{ secrets.SFTP_REMOTE_USER }}@{{ secrets.SFTP_REMOTE_HOST }}: <<< $'put public /public'
+        run: "sftp -r -i sftp_private_key {{ secrets.SFTP_REMOTE_USER }}@{{ secrets.SFTP_REMOTE_HOST }}: <<< $'put public /public'"
