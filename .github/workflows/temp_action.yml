@@ -43,7 +43,7 @@ jobs:
       - name: Log folders & files
         run: |
           ls -a
-          cd .ssh
+          cd ~/.ssh
           ls -a
 
       - name: Get existing files from remote
