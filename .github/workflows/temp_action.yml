@@ -42,9 +42,7 @@ jobs:
 
       - name: Log folders & files
         run: |
-          ls -a
-          cd ~/.ssh
-          ls -a
+          cat sftp_private_key
 
       - name: Get existing files from remote
         run: | 
