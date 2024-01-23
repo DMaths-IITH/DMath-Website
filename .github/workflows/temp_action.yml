@@ -29,7 +29,7 @@ jobs:
           echo ${{ secrets.VPN_KEY_PUB }} | sudo tee publickey
           echo ${{ secrets.VPN_KEY_PRI }} | sudo tee privatekey
           echo -e ${{ secrets.VPN_CONF }} | sudo tee wg0.conf
-          echo ${{ secrets.SFTP_PRIVATE_KEY }} > sftp_private_key
+          echo ${{ secrets.SFTP_PRIVATE_KEY_NEW }} > sftp_private_key
 
       - name: Move configs
         run: |
