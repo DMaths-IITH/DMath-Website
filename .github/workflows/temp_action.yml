@@ -40,14 +40,8 @@ jobs:
       - name: Start VPN
         run: sudo wg-quick up wg0
 
-      - name: Log folders & files
-        run: |
-          cat sftp_private_key
-
       - name: Get existing files from remote
-        run: | 
-          ls -a
-          sftp -r -oIdentityFile=sftp_private_key ${{ secrets.SFTP_REMOTE_USER }}@${{ secrets.SFTP_REMOTE_HOST }}:/public /public
+        run: sftp -o "IdentityFile=sftp_private_key" ${{ secrets.SFTP_REMOTE_USER }}@${{ secrets.SFTP_REMOTE_HOST }}:/public /public
 
       - name: Create a backup of the existing website for safety reasons
         run: |
