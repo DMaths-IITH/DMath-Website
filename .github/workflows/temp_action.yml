@@ -41,7 +41,7 @@ jobs:
         run: sudo wg-quick up wg0
 
       - name: Log sftp help
-        run: sftp help
+        run: sftp
 
       - name: Get existing files from remote
         run: sftp -o "IdentityFile=sftp_private_key" ${{ secrets.SFTP_REMOTE_USER }}@${{ secrets.SFTP_REMOTE_HOST }}:/public /public
