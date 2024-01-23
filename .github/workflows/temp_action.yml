@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Test Pipeline
 on:
   workflow_dispatch
 
