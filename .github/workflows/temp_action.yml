@@ -41,7 +41,7 @@ jobs:
         run: sudo wg-quick up wg0
 
       - name: Get existing files from remote
-        run: sftp -r -i sftp_private_key ${{ secrets.SFTP_REMOTE_USER }}@${{ secrets.SFTP_REMOTE_HOST }}:/public /public
+        run: sftp -r -oIdentityFile=sftp_private_key ${{ secrets.SFTP_REMOTE_USER }}@${{ secrets.SFTP_REMOTE_HOST }}:/public /public
 
       - name: Create a backup of the existing website for safety reasons
         run: |
